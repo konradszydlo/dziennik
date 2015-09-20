@@ -1,0 +1,30 @@
+<html>
+<head>
+  <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to dziennik</title>
+</head>
+<body onload="dziennik.core.init()">
+<div id="navbar"></div>
+<div>
+  <p>Sample application where you can manage school stuff</p>
+  <a href="/profiles">View all teachers</a>
+</div>
+
+<!-- scripts and styles -->
+{% style "/assets/bootstrap/css/bootstrap.min.css" %}
+{% style "/assets/bootstrap/css/bootstrap-theme.min.css" %}
+{% style "/css/screen.css" %}
+{% style "/css/profile.css" %}
+
+<script type="text/javascript">
+  var context = "{{servlet-context}}";
+</script>
+
+<script src="/js/compiled/dziennik.js" type="text/javascript"></script>
+</body>
+</html>
+
+
+
+
